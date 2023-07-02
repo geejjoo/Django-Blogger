@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<!-- home post -->
+{% for post in posts %}
+{% include 'snippets/post_snippet.html' %}
+{% endfor %}
+<!--end home post-->
+
+<!--pagination -->
+<br>
+{% include 'snippets/pagination_snippet.html' %}
+<!--endpagination-->
+
+{% endblock %}
